@@ -9,6 +9,7 @@ import Watch from "./assets/Watch.svg";
 import Phone from "./assets/Phone.svg";
 import Footer from "./Footer";
 import OrderSummary from "./Pages/OrderSummary";
+import HamburgerMenu from "./Components/HamburgerMenu";
 
 function App() {
   const paymentData = [
@@ -43,6 +44,7 @@ function App() {
   return (
     <div className="font-Inter">
      <Navbar navList={["Home", "About", "Contact Us", "Blog"]} />
+     <HamburgerMenu navList={["Home", "About", "Contact Us", "Blog"]} />
       <OrderSummary paymentSteps={paymentData} summaryData={summaryData} />
       <Footer
         assitantToTheBuyer={assitantToTheBuyer}

@@ -8,6 +8,9 @@ module.exports = {
       filter: {
         invert: "invert(1)",
       },
+      colors: {
+        'black': '#000000',
+      },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },

@@ -6,7 +6,8 @@ import Cart from "../assets/Cart.png";
 import InputBox from "./Textbox/InputBox";
 const Navbar = ({ navList }) => {
   return (
-    <div className=" hidden lg:flex ml-28 my-8 items-center    justify-around  font-inter">
+    <div>
+    <div className=" hidden lg:flex ml-28 my-3 items-center    justify-around  font-inter">
       <div className="flex gap-x-10 items-center">
         <img src={logo} alt="logo" loading="lazy" />
         <div className="relative -top-3">
@@ -50,7 +51,10 @@ const Navbar = ({ navList }) => {
         <img className="w-5 h-5" src={Cart} alt="Cart" />
         <img className="w-5 h-5" src={User} alt="User" />
       </div>
-      <hr className="color-black" />
+
+    </div>
+    <hr class="bg-gray-200 h-[1.5px] w-full " />
+
     </div>
   );
 };

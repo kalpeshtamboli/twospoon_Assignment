@@ -7,9 +7,18 @@ const OrderSummary = ({ paymentSteps, summaryData }) => {
     <main className="mt-20 font-inter">
       <section className="flex justify-around lg:gap-x-20">
         {paymentSteps?.map((step) => (
-          <div className={`flex items-center gap-x-2 ${step?.label==="Step 1" && "hidden md:flex"}`}>
+          <div
+            className={`flex items-center gap-x-2 ${
+              step?.label === "Step 1" && "hidden md:flex"
+            }`}
+          >
             <div>
-              <img src={step.img} alt="no load" className="mx-auto h-6 w-6" loading="lazy" />
+              <img
+                src={step.img}
+                alt="no load"
+                className="mx-auto h-6 w-6"
+                loading="lazy"
+              />
             </div>
             <div
               className={` font-semibold ${
@@ -24,6 +33,7 @@ const OrderSummary = ({ paymentSteps, summaryData }) => {
       </section>
 
       <div className="  flex flex-col  lg:flex-row justify-center lg:space-x-24   mt-28 mb-10">
+        {/* Summary UI */}
         <div className=" hidden md:block summary  border-[1.5px] rounded-xl py-2 md:mx-20 xl:mx-0 px-8">
           <h1 className="font-semibold text-xl py-5">Summary</h1>
 
@@ -32,7 +42,9 @@ const OrderSummary = ({ paymentSteps, summaryData }) => {
               <div className="flex justify-between rounded-xl  bg-gray-100 py-4 px-5 ">
                 <div className="flex items-center gap-x-4">
                   <img src={data?.img} alt="" loading="lazy" />{" "}
-                  <p className="font-semibold text-[15px] tracking-wide">{data?.title}</p>
+                  <p className="font-semibold text-[15px] tracking-wide">
+                    {data?.title}
+                  </p>
                 </div>
                 <div className="flex items-center font-bold text-[15px]">
                   {data?.price}

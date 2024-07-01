@@ -23,7 +23,7 @@ const HamburgerMenu = ({ navList }) => {
   }, []);
 
   return (
-    <div className="lg:hidden flex z-10 relative justify-between items-center mx-20 mt-3">
+    <div className="lg:hidden flex z-10 relative justify-between items-center mx-5 mt-3">
       <div>
         <img src={logo} alt="" />
       </div>

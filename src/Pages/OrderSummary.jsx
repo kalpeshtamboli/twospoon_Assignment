@@ -32,7 +32,7 @@ const OrderSummary = ({ paymentSteps, summaryData }) => {
         ))}
       </section>
 
-      <div className="  flex flex-col  lg:flex-row justify-center lg:space-x-44   mt-28 mb-10">
+      <div className="  flex flex-col  lg:flex-row justify-center lg:space-x-12   mt-28 mb-10">
         {/* Summary UI */}
         <div className=" hidden md:block summary  border-[1.5px] rounded-xl py-2 md:mx-20 xl:mx-0 px-8">
           <h1 className="font-semibold text-xl py-5">Summary</h1>
